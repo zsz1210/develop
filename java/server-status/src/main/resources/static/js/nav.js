@@ -14,3 +14,16 @@ $(function() {
   });
 });
 
+$(function() {
+  $("#listView #home").click(function() {
+    console.log("home");
+    $("#rightWrapper #right-content #home").show();
+    $("#rightWrapper #right-content #sysinfo").hide();
+  });
+
+  $("#listView #sysinfo").click(function() {
+    console.log("sysinfo");
+    $("#rightWrapper #right-content #sysinfo").show();
+    $("#rightWrapper #right-content #home").hide();
+  });
+});
