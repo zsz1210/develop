@@ -19,7 +19,7 @@ public class UtilsExecCmd {
             InputStreamReader inStream = new InputStreamReader(p.getInputStream());
             BufferedReader reader = new BufferedReader(inStream);
             while ((line = reader.readLine()) != null) {
-                res += line;
+                res = res + (line + '\n');
             }
         }
         catch (Exception e) {

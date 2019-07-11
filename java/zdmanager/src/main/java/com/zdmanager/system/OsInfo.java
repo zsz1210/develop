@@ -3,8 +3,6 @@ package com.zdmanager.system;
 
 import java.io.Serializable;
 
-import com.zdmanager.utils.UtilsFile;
-
 // This information is from ubuntu (/etc/lsb-release)
 // val:
 //      DISTRIB_ID=Ubuntu
@@ -57,5 +55,6 @@ public class OsInfo implements Serializable {
     public String getRelease()      {return this.release;}
     public String getCodeName()     {return this.codename;}
     public String getDescription()  {return this.description;}
+
 }
 

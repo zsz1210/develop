@@ -25,7 +25,6 @@ public class EthernetCard implements Serializable {
         eths = new ArrayList<String>();
         String[] steps = this.splitStep(val);
         for (String step : steps) {
-            System.out.println("STEPS"+step);
             String[] eth = this.splitEth(step);
             this.setEth(eth);
         }
