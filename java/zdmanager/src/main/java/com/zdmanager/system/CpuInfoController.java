@@ -30,7 +30,6 @@ public class CpuInfoController {
     private CpuInfo getCpuInfo() {
         UtilsExecCmd uec = new UtilsExecCmd();
         String data = uec.exec(this.CMD_LSCPU);
-        System.out.println(data);
         return new CpuInfo(data);
     }
 
