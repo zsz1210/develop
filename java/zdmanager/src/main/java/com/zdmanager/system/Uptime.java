@@ -29,29 +29,12 @@ public class Uptime implements Serializable {
         this.setSecs(uptime);
     }
 
-    private void setYears(Integer secs) {
-        this.years = secs / 2678400;
-    }
-
-    private void setMonths(Integer secs) {
-        this.months = (secs / 2678400) % 12;
-    }
-
-    private void setDays(Integer secs) {
-        this.days = (secs / 86400) % 31;
-    }
-
-    private void setHours(Integer secs) {
-        this.hours = (secs / 3600) % 24;
-    }
-
-    private void setMins(Integer secs) {
-        this.mins = (secs / 60) % 60;
-    }
-
-    private void setSecs(Integer secs) {
-        this.secs = secs % 60;
-    }
+    private void setYears(Integer secs)   {this.years   = secs / 2678400;}
+    private void setMonths(Integer secs)  {this.months  = (secs / 2678400) % 12;}
+    private void setDays(Integer secs)    {this.days    = (secs / 86400) % 31;}
+    private void setHours(Integer secs)   {this.hours   = (secs / 3600) % 24;}
+    private void setMins(Integer secs)    {this.mins    = (secs / 60) % 60;}
+    private void setSecs(Integer secs)    {this.secs    = secs % 60;}
 
     ////////////////////////////////////////////////////////////////
     // public method
